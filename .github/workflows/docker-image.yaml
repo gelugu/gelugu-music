@@ -14,4 +14,4 @@ jobs:
       - name: Build the Docker image
         run: docker build --tag gelugu/gelugu-music:0.1.0 --file Dockerfile .
       - name: Push the Docker image
-        run: docker push gelugu/my-space:0.1.0
+        run: docker push gelugu/gelugu-music:0.1.0
