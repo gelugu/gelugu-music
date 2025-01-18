@@ -12,6 +12,6 @@ jobs:
       - name: Docker login
         run: docker login -u gelugu -p ${{secrets.DOCKER_HUB_TOKEN}}
       - name: Build the Docker image
-        run: docker build --tag gelugu/gelugu-music:0.2.0 --file Dockerfile .
+        run: docker build --tag gelugu/gelugu-music:0.3.0 --file Dockerfile .
       - name: Push the Docker image
-        run: docker push gelugu/gelugu-music:0.2.0
+        run: docker push gelugu/gelugu-music:0.3.0

@@ -20,7 +20,7 @@ const Contacts: Contact[] = [
 
 export const ContactsList = () => {
     return (
-        <div className={"flex gap-6 flex-wrap items-center justify-center"}>
+        <div className={"flex flex-col sm:flex-row gap-2 sm:gap-6 flex-wrap items-center justify-center"}>
             {Contacts.map((contact, index) => (
                 <a
                     key={`contact-${index}`}
