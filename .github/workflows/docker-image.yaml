@@ -4,11 +4,12 @@ on:
   push:
     branches: [ "main" ]
 
-
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set up environment
+        run: echo "DOCKER_HUB_TOKEN=${{ secrets.DOCKER_HUB_TOKEN }}" >> $GITHUB_ENV
       - name: Release
         run: npm run release
