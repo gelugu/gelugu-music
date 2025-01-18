@@ -4,7 +4,7 @@ const { execSync } = require('child_process');
 const packageData = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 const repositoryName = 'gelugu'
 const imageName = `${repositoryName}/${packageData.name}:${packageData.version}`;
-const dockerToken = process.env.DOCKER_HUB_TOKEN
+const dockerToken = "${DOCKER_HUB_TOKEN}";
 
 const dockerLogin = () => {
     executeCommand(
