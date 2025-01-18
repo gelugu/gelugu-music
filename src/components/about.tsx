@@ -2,20 +2,19 @@ import {CoverImage} from "@/components/cover";
 import {randomItem} from "@/utils/arrays";
 
 const ARTIST_NAME = "gelugu";
-
-const CTAs: string[] = [
-    "Take a listen. It won't hurt like Placebo.",
-    "Give it a spin – zero side effects.",
-    "Tune in – vibes included, no charge.",
-    "Low effort, high reward. Just listen.",
-    "Try it – it’s less risky than surfing.",
-    "Click it. Chill with it. Repeat.",
-    "Not your typical placebo – but still works.",
-    "Start listening – your brain will vibe.",
-    "No prescription needed. Just press play.",
-];
-
 export const About = () => {
+    const CTAs: string[] = [
+        "Take a listen. It won't hurt like Placebo.",
+        "Give it a spin – zero side effects.",
+        "Tune in – vibes included, no charge.",
+        "Low effort, high reward. Just listen.",
+        "Try it – it’s less risky than surfing.",
+        "Click it. Chill with it. Repeat.",
+        "Not your typical placebo – but still works.",
+        "Start listening – your brain will vibe.",
+        "No prescription needed. Just press play.",
+    ];
+
     const CTA = randomItem<string>(CTAs);
 
     return (

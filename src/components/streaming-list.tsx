@@ -8,6 +8,11 @@ type Platform = {
 
 const StreamingPlatforms: Platform[] = [
     {
+        name: "SoundCloud",
+        icon: "/soundcloud.svg",
+        url: "https://soundcloud.com/gelugu",
+    },
+    {
         name: "Spotify",
         icon: "/spotify.svg",
         url: "https://open.spotify.com/artist/2wq8TtuleurnscfaM8VtcZ",
