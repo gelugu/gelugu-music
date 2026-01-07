@@ -1,6 +1,7 @@
 import {About} from "@/components/about";
 import {StreamingList} from "@/components/streaming-list";
 import {ContactsList} from "@/components/contacts";
+import {ComingSoon} from "@/components/comming-soon";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <About/>
         <StreamingList/>
+        <ComingSoon/>
       </main>
       <footer className="row-start-3">
         <ContactsList/>
