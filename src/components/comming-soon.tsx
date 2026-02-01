@@ -1,5 +1,6 @@
 import GlitchCanvas from "@/components/glitch-canvas";
 import Countdown from "@/components/countdown";
+import {getStaticImageUrl} from "@/utils/storage";
 
 type UpcomingRelease = {
     name: string;
@@ -10,7 +11,7 @@ type UpcomingRelease = {
 const upcomingRelease: UpcomingRelease = {
     name: "Domestic Mix",
     date: "2026-01-30",
-    coverUrl: "https://ams1.vultrobjects.com/gelugu-music/dom_mix.webp",
+    coverUrl: getStaticImageUrl("dom_mix.webp"),
 };
 
 export const ComingSoon = () => {

@@ -1,6 +1,7 @@
 import GlitchCanvas from "@/components/glitch-canvas";
+import {getStaticImageUrl} from "@/utils/storage";
 
-const COVER_IMAGE_URL = 'https://ams1.vultrobjects.com/gelugu-music/cover.webp';
+const COVER_IMAGE_URL = getStaticImageUrl("cover.webp");
 
 export const CoverImage = () => {
     return (

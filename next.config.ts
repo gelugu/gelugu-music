@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'ams1.vultrobjects.com',
+                hostname: 'storage.googleapis.com',
             },
         ],
     },

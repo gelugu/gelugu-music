@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Analytics from "@/components/analytics";
 import PixelTracker from "@/components/pixel-tracker";
+import {getStaticImageUrl} from "@/utils/storage";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
         description: 'Gelugu - indie electronic music artist',
         images: [
             {
-                url: 'https://ams1.vultrobjects.com/gelugu-music/cover.webp',
+                url: getStaticImageUrl("cover.webp"),
                 width: 300,
                 height: 300,
                 alt: 'Gelugu - indie electronic music artist',
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Gelugu Music',
         description: 'Gelugu - indie electronic music artist',
-        images: ['https://ams1.vultrobjects.com/gelugu-music/cover.webp'],
+        images: [getStaticImageUrl("cover.webp")],
     },
 };
 
