@@ -1,38 +1,19 @@
 import Image from "next/image";
 
-type Platform = {
+export type Platform = {
     name: string;
     icon: string;
     url: string;
 }
 
-const StreamingPlatforms: Platform[] = [
-    {
-        name: "SoundCloud",
-        icon: "/soundcloud.svg",
-        url: "https://soundcloud.com/gelugu",
-    },
-    {
-        name: "Spotify",
-        icon: "/spotify.svg",
-        url: "https://open.spotify.com/artist/2wq8TtuleurnscfaM8VtcZ",
-    },
-    {
-        name: "Apple Music",
-        icon: "/apple-music.svg",
-        url: "https://music.apple.com/am/artist/gelugu/1772762680",
-    },
-    {
-        name: "YouTube Music",
-        icon: "/youtube-music.svg",
-        url: "https://music.youtube.com/channel/UCmjPv1zuA2kNlX-l5wY9DAw",
-    },
-];
+type Props = {
+    platforms: Platform[];
+}
 
-export const StreamingList = () => {
+export const StreamingList = ({ platforms }: Props) => {
     return (
         <ul className={"flex gap-4 items-center justify-center w-full"}>
-            {StreamingPlatforms.map((platform, index) => (
+            {platforms.map((platform, index) => (
                 <li key={`streaming-platform-${platform.name}-${index}`}>
                     <a
                         href={platform.url}

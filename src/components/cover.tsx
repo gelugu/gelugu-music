@@ -1,11 +1,13 @@
 import GlitchCanvas from "@/components/glitch-canvas";
 import {getStaticImageUrl} from "@/utils/storage";
 
-const COVER_IMAGE_URL = getStaticImageUrl("cover.webp");
+type Props = {
+    filename: string;
+}
 
-export const CoverImage = () => {
+export const CoverImage = ({ filename }: Props) => {
     return (
-        <GlitchCanvas src={COVER_IMAGE_URL} width={300} height={300}/>
+        <GlitchCanvas src={getStaticImageUrl(filename)} width={300} height={300}/>
     )
 }
 
